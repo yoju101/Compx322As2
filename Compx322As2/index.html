@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+</head>
+    <div class="header">
+        <h1>Weather Dashboard</h1>
+    </div>
+    <div class="main-container">
+        <div class="town">
+            <h2>Town and Weather Graph</h2>
+            <div class="graph"></canvas> <canvas id="temperatureChart" width="900" height="200">empty canvas</canvas></div>
+        </div>
+    </div>
+    <div>
+          <p>The Compare Graph feature takes the two most recently selected town widgets and compares them. </p>  
+    </div>
+    <div id="compaireGraph">
+        <script src="ajax.js"></script>
+    </div>
+    <label for="townSelect">Select a Town:</label>
+    <select id="townDropdown"></select>
+    <div id="data" class="data-container">
+    
+    </div>
+    <div id="widgetSpot">
+
+    </div>
+</body>
+</html>
